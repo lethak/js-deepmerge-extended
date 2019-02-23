@@ -1,0 +1,28 @@
+{
+  "name": "js-deepmerge-extended",
+  "version": "1.0.0",
+  "description": "A library for deep (recursive) merging of Javascript objects",
+  "keywords": [
+    "merge",
+    "deep",
+    "extend",
+    "copy",
+    "clone",
+    "recursive"
+  ],
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lethak/js-deepmerge-extended.git"
+  },
+  "author": "LethaK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lethak/js-deepmerge-extended/issues"
+  },
+  "homepage": "https://github.com/lethak/js-deepmerge-extended#readme",
+  "dependencies": {
+    "is-mergeable-object": "^1.1.0"
+  }
+}
