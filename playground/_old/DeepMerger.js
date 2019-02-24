@@ -1,6 +1,10 @@
 const isMergeableObject = require('is-mergeable-object')
 
-
+/**
+ * This class is a direct adaptation from https://github.com/TehShrike/deepmerge
+ * It helped me understand how I could build what I wanted with DMA
+ * It stays there for occasional debugging and inspirational purpose.
+ */
 const DeepMerger = function () {
   const analyze = {}
   Object.defineProperty(this, 'analyze', {

@@ -1,7 +1,5 @@
-//const deepmerge = require('./index')
-// const DeepMerger = require('./DeepMerger')
-const { AnalyzedItem, DeepMergeAnalyzer } = require('../DeepMergeAnalyzer')
-const { x, y, expected_xy } = require('./samples')
+const { AnalyzedItem, DeepMergeAnalyzer } = require('../src/DeepMergeAnalyzer')
+const { x, y, expected_xy } = require('./_common/samples')
 
 
 const x_string = JSON.stringify(x)
@@ -9,7 +7,6 @@ const x_string = JSON.stringify(x)
 const y_string = JSON.stringify(y)
 const expected_xy_string = JSON.stringify(expected_xy)
 
-// const dm = new DeepMerger()
 const dma = new DeepMergeAnalyzer()
 
 
