@@ -1,17 +1,23 @@
 {
   "name": "js-deepmerge-extended",
-  "version": "1.0.0",
-  "description": "A library for deep (recursive) merging of Javascript objects",
+  "version": "2.0.0",
+  "description": "A library for deep (recursive) merging of Javascript objects and analyzing the results.",
   "keywords": [
     "merge",
     "deep",
+    "analyse",
     "extend",
     "copy",
     "clone",
     "recursive"
   ],
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "./node_modules/.bin/webpack --watch --progress",
+    "prod": "./node_modules/.bin/webpack --progress",
+    "lint": "./node_modules/.bin/eslint --no-fix --env browser,node \"src/**\"",
+    "lint:fix": "npm run lint --silent -- --fix"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lethak/js-deepmerge-extended.git"
@@ -23,13 +29,27 @@
   },
   "homepage": "https://github.com/lethak/js-deepmerge-extended#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-minify": "^0.3.0",
-    "cross-env": "^5.1.3"
+    "@babel/core": "^7.5.5",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/jest": "^24.0.18",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "eslint": "^5.16.0",
+    "eslint-plugin-internal-rules": "file:.eslint/internal-rules",
+    "jest": "^24.9.0",
+    "lint": "^0.7.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.4",
+    "uglifyjs-webpack-plugin": "^2.1.3",
+    "webpack-cli": "^3.3.9",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "is-mergeable-object": "^1.1.0"
+    "@typescript-eslint/eslint-plugin": "^2.3.3",
+    "@typescript-eslint/parser": "^2.3.3",
+    "is-mergeable-object": "^1.1.0",
+    "webpack": "^4.41.0"
   }
 }

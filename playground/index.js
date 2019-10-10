@@ -1,4 +1,4 @@
-const { AnalyzedItem, DeepMergeAnalyzer } = require('../src/DeepMergeAnalyzer')
+const { AnalyzedItem, DeepMergeAnalyzer } = require('./DeepMergeAnalyzer')
 const { x, y, expected_xy } = require('./_common/samples')
 
 

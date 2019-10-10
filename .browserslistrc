@@ -1,0 +1,19 @@
+# Browsers that we support: (for maintenance easing, please update the following url when updating this file)
+# @see https://browserl.ist/?q=last+4+Firefox+versions%2C+last+10+Chrome+versions%2C+last+4+ChromeAndroid+versions%2C+last+4+FirefoxAndroid+versions%2C+%3E%3D+0.2%25%2C+not+dead%2C+not+%3C%3D+0.01%25
+#
+# Help:
+# @see https://browserl.ist/
+# @see https://github.com/browserslist/browserslist
+# @see https://babeljs.io/docs/en/babel-preset-env#browserslist-integration
+
+last 4 Firefox versions
+last 10 Chrome versions
+last 4 ChromeAndroid versions
+last 4 FirefoxAndroid versions
+>= 0.2%
+not <= 0.01%
+not dead
+#Firefox >= 57
+
+
+# "browsers": ["last 4 Firefox versions", "last 10 Chrome versions", "last 4 ChromeAndroid versions", "last 4 FirefoxAndroid versions", ">= 0.2%", "not <= 0.01%", "not dead"]
